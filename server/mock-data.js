@@ -2,16 +2,14 @@
   
 const users = {
     "kamlesh": {id:1, username: 'kamlesh', password: '123'},
-    "ramesh": {id:2, username: 'ramesh', password: '123'},
-    "suresh": {id:3, username: 'suresh', password: '123'},
-    "mahesh": {id:4, username: 'mahesh', password: '123'}
+    "ramesh": {id:2, username: 'john', password: '123'},
+    "suresh": {id:3, username: 'jane', password: '123'}
 }
 
 const userDetails = {
     "kamlesh": {id:1, username: 'kamlesh', first_name: 'Kamlesh', last_name: 'Jha'},
-    "ramesh": {id:2, username: 'ramesh', first_name: 'Ramesh', last_name: 'Jha'},
-    "suresh": {id:3, username: 'suresh', first_name: 'Suresh', last_name: 'Jha'},
-    "mahesh": {id:4, username: 'mahesh', first_name: 'Mahesh', last_name: 'Jha'}
+    "ramesh": {id:2, username: 'john', first_name: 'John', last_name: 'Doe'},
+    "suresh": {id:3, username: 'jane', first_name: 'Jane', last_name: 'Doe'}
 }
 
  let _loggedInUsers = [];
