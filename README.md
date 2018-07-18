@@ -1,6 +1,16 @@
 # LoginLogoutFlow
 
-### Setup: 
+## Description
+
+This is complete home->login->details->logout->home flow implemented using Angular 6 and nodeJS.
+It has a Loader component which overlays entire page during login and logout server calls.
+A Status component shows User states(Not logged In, Logging In, Logged In, Logging out, Logged out) for the entire flow.
+
+A nodeJS server responds for API calls. User data is mocked on server. It Validates username as well as password.
+Valid usernames for testing: kamlesh, John, Jane  Password: 123
+
+
+## Setup: 
 1. Install nodejs(version > 8) and npm (version > 5) if it is not installed from [here](https://nodejs.org/en/download/)
 
 2. Install [angular-cli](https://github.com/angular/angular-cli) 
@@ -37,4 +47,6 @@
 
    ``` npm start ```
    
-4. Open browser and go to `http://localhost:4200`
+4. Open browser and go to `http://localhost:4200` 
+
+
