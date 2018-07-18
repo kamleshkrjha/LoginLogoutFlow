@@ -1,0 +1,5 @@
+<div class="status-indicator">
+  <span style="font-weight: bold"> {{ status }} </span>
+  <span class="btn" *ngIf="!isLoggedIn"><a routerLink='/login'>Login</a></span>
+  <span class="btn" *ngIf="isLoggedIn"><a routerLink='/logout'>Logout</a></span>
+</div>

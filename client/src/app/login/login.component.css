@@ -1,0 +1,17 @@
+.login {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.page-center {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+.control {
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+}

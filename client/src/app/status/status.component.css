@@ -1,0 +1,7 @@
+.status-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    margin: 10px;
+}
