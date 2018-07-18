@@ -18,9 +18,23 @@ export class LoginComponent implements OnInit {
     private userService: UserService) { }
   username = '';
   password = '';
+  validationError = '';
+  validate(): Boolean {
+    if (/[\^.\\/,]/.test(this.username)) {
+      this.validationError = ', / ^ . \\ not allowed in username';
+      return false;
+    }
+    if (/[\^.\\/,]/.test(this.password)) {
+      this.validationError = ', / ^ . \\ not allowed in password';
+      return false;
+    }
+    this.validationError = '';
+    return true;
+  }
   onSubmit (): any {
     // successful submission -> details page
-    this.userService.changeState('LOGGING_IN');
+    if (this.validate()) {
+      this.userService.changeState('LOGGING_IN');
     this.loaderService.show();
     this.authService.login(this.username, this.password)
     .subscribe((res) => {
@@ -32,6 +46,7 @@ export class LoginComponent implements OnInit {
         alert(res.errorMessage);
       }
     });
+    }
   }
   ngOnInit() {
   }
